@@ -10,4 +10,5 @@ git remote add origin https://github.com/thanhbl-hust/algorithms-trainingto2023.
 git branch -M main
 git push -u origin main
 ------------------------
+Repository to training algorithms, datastructures and interview questions.
 
