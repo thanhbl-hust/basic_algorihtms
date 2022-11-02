@@ -1,16 +1,19 @@
-//algo - sorting - bubblesort - cpp
+//algo - sorting - selectionSort - cpp
 
 #include<bits/stdc++.h>
 
 using namespace std;
 
-void bubbleSort(int a[100], int length){
+void selectionSort(int a[100], int length){
 	for(int i = 0; i < length - 1; i++){
-		for(int j = 0; j < length - 1 - i; j++){
-			if(a[j] > a[j + 1]){
-				swap(a[j], a[j + 1]);
-				//using third index (tmp);
+		int minindex = i;
+		for(int j = i + 1; j < length; j++){
+			if(a[j] < a[minindex]){
+				minindex = j;
 			}
+		}
+		if(minindex != i){
+			swap(a[minindex], a[i]);
 		}
 	}
 }
@@ -34,7 +37,7 @@ int main(){
 	
 	cout << "Array after: " << endl;
 	
-	bubbleSort(a, t); //sorting array;
+	selectionSort(a, t); //sorting array;
 	show(a, t); // print out array after sorted;
 	return 0;
 }
