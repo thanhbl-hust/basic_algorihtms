@@ -5,7 +5,7 @@ def mergeSort(list):
     length = len(list)
     if length == 1:
         return list 
-    mid = length // 2 #lay so nguyen
+    mid = length // 2 #take round number: using //
     left = list[:mid]
     right = list[mid:]
     mergeSort(left)
