@@ -11,7 +11,7 @@ long long fibonacci(int t){
 	return fibonacci(t - 1) + fibonacci(t - 2); //recursive here
 	
 	//easy to code but take long time if t get bigger;
-	
+	//should use dynamic;
 }
 
 int main(){
