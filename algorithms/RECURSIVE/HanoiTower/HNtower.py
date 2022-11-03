@@ -1,6 +1,6 @@
 #Step 1: Move (n - 1) tower in top from begin to middle;
 #Step 2: Move n (biggest tower) from begin to end;
-#Step 3: Move (n - 1) tower left from 
+#Step 3: Move (n - 1) tower left from middle to end;
 
 
 def HaNoitower(n, start, end, middle):
