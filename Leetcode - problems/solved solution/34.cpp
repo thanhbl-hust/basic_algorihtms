@@ -8,8 +8,6 @@ public:
         
         int start = 0;
         int end = nums.size() - 1;
-        
-        
         while(start < nums.size()){
             if(nums[start] == target){
                 break;
@@ -27,9 +25,6 @@ public:
             index[0] = start;
             index[1] = end;
         }
-        
-        
-        
         return index;
     }
 };
